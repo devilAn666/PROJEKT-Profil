@@ -16,4 +16,48 @@ html { box-sizing: border-box; }
 
 body {
 	background-color: #bdc3c7;
+	margin: 0;
+}
+
+.profil {
+	/*width: 300px;*/
+	background-color: #31363b;
+	box-shadow: 2px 3px 5px grey;
+	color: white;
+	margin-top: 25px;
+	margin-left: 25px;
+	position: relative;
+	
+}
+.profil,
+.foto {
+	width: 250px;
+}
+
+.foto {
+	margin: 0;
+}
+
+.logo {
+	border-radius: 100%;
+	position: absolute;
+	right: 25px;
+	top: 140px;
+	background-color: #b92e81;
+}
+
+.obsah,
+.odkazy {
+	padding: 20px;
+}
+
+.obsah {
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font: 14px / 1.5 'Source Sans Pro';
+}
+
+h1{
+	font: 24px / 1.5 'Montserrat';
+	font-weight: 700;
+	margin: 0;
 }
