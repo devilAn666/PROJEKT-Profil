@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 	BARVY
@@ -13,51 +19,96 @@ html { box-sizing: border-box; }
 	twitter    #1da1f2
 */
 
-
 body {
-	background-color: #bdc3c7;
-	margin: 0;
+  background-color: #bdc3c7;
+  margin: 0;
 }
 
 .profil {
-	/*width: 300px;*/
-	background-color: #31363b;
-	box-shadow: 2px 3px 5px grey;
-	color: white;
-	margin-top: 25px;
-	margin-left: 25px;
-	position: relative;
-	
+  background-color: #31363b;
+  box-shadow: 2px 3px 5px grey;
+  color: whitesmoke;
+  margin-top: 25px;
+  margin-left: 25px;
+  position: relative;
 }
+
 .profil,
 .foto {
-	width: 250px;
+  width: 250px;
 }
 
 .foto {
-	margin: 0;
+  margin: 0;
 }
 
 .logo {
-	border-radius: 100%;
-	position: absolute;
-	right: 25px;
-	top: 140px;
-	background-color: #b92e81;
-}
-
-.obsah,
-.odkazy {
-	padding: 20px;
+  border-radius: 100%;
+  position: absolute;
+  right: 25px;
+  top: 140px;
+  background-color: #b92e81;
 }
 
 .obsah {
-	/*font-family: 'Source Sans Pro', sans-serif;*/
-	font: 14px / 1.5 'Source Sans Pro';
+  padding: 20px;
+  font: 14px / 1.5 "Source Sans Pro";
 }
 
-h1{
-	font: 24px / 1.5 'Montserrat';
-	font-weight: 700;
-	margin: 0;
+h1 {
+  font: 24px / 1.5 "Montserrat";
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 20px 0 0 0;
+}
+
+.odkazy {
+  margin: 0;
+  padding: 0;
+  background-color: #31363b;
+}
+
+.odkazy li {
+  display: inline-block;
+  text-align: center;
+}
+
+.odkazy a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 15px;
+}
+
+.odkazy a:hover {
+  color: white;
+}
+
+.portfolio {
+  width: 250px;
+  border-top: 2px solid #3f464d;
+  border-bottom: 2px solid #3f464d;
+}
+
+.facebook,
+.twitter {
+  width: 123px;
+}
+
+.portfolio:hover {
+	background-color: #e74c3c;
+}
+
+.facebook:hover {
+	background-color: #3b5998;
+}
+
+.twitter:hover {
+	background-color: #1da1f2;
 }
